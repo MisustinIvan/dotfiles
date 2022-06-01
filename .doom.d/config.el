@@ -74,3 +74,8 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(map! :n "j" "<left>")
+(map! :n "k" "<down>")
+(map! :n "l" "<up>")
+(map! :n ";" "<right>")
