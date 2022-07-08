@@ -26,4 +26,40 @@ set.splitbelow = true
 
 set.autoindent = true
 
+set.mouse = 'a'
+
 vim.wo.fillchars='eob: '
+
+vim.cmd([[
+
+let g:NERDTreeWinPos = 'right'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'luna'
+
+syntax on
+
+nmap <F3> :NERDTreeToggle<CR>
+
+nmap \a :vnew<CR>
+nmap \s :new<CR>
+
+nnoremap j h
+nnoremap k j
+nnoremap l k
+nnoremap ; l
+
+inoremap < <><Left>
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+
+
+nmap \q :bp<CR>
+nmap \w :bn<CR>
+nmap \e :tabprevious<CR>
+nmap \r :tabnext<CR>
+nmap \t :tabclose<CR>
+nmap \y :tabnew<CR>
+
+]])
