@@ -35,7 +35,7 @@ vim.cmd([[
 let g:NERDTreeWinPos = 'right'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'luna'
+let g:airline_theme = 'deus'
 
 syntax on
 
@@ -54,6 +54,10 @@ inoremap ( ()<Left>
 inoremap [ []<Left>
 inoremap { {}<Left>
 
+nmap gl :Telescope live_grep<CR>
+nmap ff :Telescope find_files<CR>
+nmap gc :Telescope git_commits<CR>
+nmap gr :Telescope lsp_references<CR>
 
 nmap \q :bp<CR>
 nmap \w :bn<CR>

@@ -1,9 +1,9 @@
 return require'packer'.startup(function()
 
     use 'wbthomason/packer.nvim'
-    use 'vim-airline/vim-airline'
+--    use 'vim-airline/vim-airline'
     use 'EdenEast/nightfox.nvim'
-    use 'vim-airline/vim-airline-themes'
+--    use 'vim-airline/vim-airline-themes'
     use 'ryanoasis/vim-devicons'
     use 'edkolev/tmuxline.vim'
     use 'preservim/nerdtree'
@@ -15,5 +15,13 @@ return require'packer'.startup(function()
     use 'hrsh7th/nvim-cmp'
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
+    use 'nvim-lua/popup.nvim'
+    use 'nvim-lua/plenary.nvim'
+    use 'nvim-telescope/telescope.nvim'
+    use 'BurntSushi/ripgrep'
+    use 'sharkdp/fd'
+    use 'nvim-lualine/lualine.nvim'
+    use 'kyazdani42/nvim-web-devicons'
+    use 'kdheepak/tabline.nvim'
 
 end)
