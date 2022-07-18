@@ -49,7 +49,7 @@ vim.opt.completeopt={"menu", "menuone", "noselect"}
                 cmp.complete()
             end
         end, {'i', 's'}),
-
+      ['<Enter>'] = cmp.mapping.confirm({ select = true }),  
       --['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
     sources = cmp.config.sources({

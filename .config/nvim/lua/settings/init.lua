@@ -40,6 +40,7 @@ let g:airline_theme = 'deus'
 syntax on
 
 nmap <F3> :NERDTreeToggle<CR>
+nmap tt :vsplit term://fish<CR> 
 
 nmap \a :vnew<CR>
 nmap \s :new<CR>
